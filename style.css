@@ -1,0 +1,49 @@
+.carousel-container {
+    position: relative;
+    width: 100%;
+}
+
+#carouselExampleAutoplaying{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1; /* Ensure the carousel is behind the navbar */
+}
+
+.navbar {
+    z-index: 1; /* Ensure the navbar is above the carousel */
+    background-color: transparent; /* Make navbar background transparent */
+    box-shadow: none; /* Remove any default box-shadow if needed */
+}
+*{
+    font-family: "Merriweather", serif;
+}
+#menu ul li a{
+    padding-right: 20px;
+    margin: 10px;
+}
+#menu{
+    margin-left: 100px;
+}
+#home{
+    position: relative;
+}
+#sticky{
+    position: fixed;
+    left:80%;
+    bottom: 2%;
+    margin-left: 10%;
+    
+  
+}
+#sticky img{
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.5s ease;
+    position: sticky;
+    
+}
+
